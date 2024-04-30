@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_curve_bg"
+        android:elevation="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rabi_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rabibackground" />
+
+                <ImageView
+                    android:id="@+id/white_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/white_bg" />
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/white_bg"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/gray_button_bg"
+                    style="@style/NoShadowButton"
+                    android:fontFamily="@font/product_sans_font"
+                    android:text="Dec 1 - Feb 28"
+                    android:textColor="@color/green_b"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/ic_rabi"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/white_bg"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/winter_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/white_bg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/ic_rabi"
+                    android:text="Rabi Crop"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kharif_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/rabi_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/kharifbackground" />
+
+                <ImageView
+                    android:id="@+id/white_bg_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/white_bg" />
+
+                <Button
+                    style="@style/NoShadowButton"
+                    android:layout_width="120dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/white_bg_2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/gray_button_bg"
+                    android:fontFamily="@font/product_sans_font"
+                    android:text="Jun 1 - Nov 30"
+                    android:textColor="@color/green_b"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ic_kharif"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignTop="@+id/white_bg_2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/rain_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/white_bg_2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/ic_kharif"
+                    android:text="Kharif Crop"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/summer_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/kharif_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/summerbackground" />
+
+                <ImageView
+                    android:id="@+id/white_bg_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/white_bg" />
+
+                <Button
+                    style="@style/NoShadowButton"
+                    android:layout_width="120dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/white_bg_3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/gray_button_bg"
+                    android:fontFamily="@font/product_sans_font"
+                    android:text="Mar 1 - May 31"
+                    android:textColor="@color/green_b"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ic_summer"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/white_bg_3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/summer_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/white_bg_3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/ic_summer"
+                    android:text="Summer Crop"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
