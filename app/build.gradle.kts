@@ -38,6 +38,7 @@ dependencies {
     implementation(libs.navigation.ui)
     implementation(libs.play.services.tasks)
     implementation(libs.firebase.auth)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

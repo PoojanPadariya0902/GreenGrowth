@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".s_importance_micro">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/s_import_micro_bk"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/transparent_white_bg"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/icon_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/header_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView14">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step to get"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Importance of Micronutrients"
+            android:textColor="@android:color/black"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_txt2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:overScrollMode="always">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/micronutrients" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elements of Plat Nutrition"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Nitrogen"
+                android:textSize="18sp"
+                android:textColor="@color/green_b"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nitrogen is a major component of proteins, hormones, chlorophyll, vitamins and enzymes essential for plant life. Nitrogen metabolism is a major factor in stem and leaf growth (vegetative growth). Too much can delay flowering end fruiting. Deficiencies can reduce yields, cause yellowing of the leaves and stunt growth."
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Phosphorus"
+                android:textSize="18sp"
+                android:textColor="@color/green_b"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phosphorus is necessary for seed germination, photosynthesis, protein formation and almost all aspects of growth and metabolism in plants. It is essential for flower and fruit formation. Low pH (less than 4) results in phosphate being chemically locked up in organic soil. Deficiency symptoms are purple stems and leaves, maturity and growth are retarded. Yields of fruit and flowers are poor. Premature drop of fruits and flowers may often occur. Phosphorus must be applied close lo the plant's roots in order for the plant to utilize it."
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Potassium"
+                android:textSize="18sp"
+                android:textColor="@color/green_b"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Potassium is necessary for formation of sugars,starches, carbohydrates, protein synthesis and cell division in roots and other parts of the plant. It helps to adjust water balance, improves stem rigidity and cold hardiness, enhances flavor and color on fruit and vegetable crops, increases the oil content of fruits and is important for leafy crops. Deficiencies result in low yields, mottled, spotted or curled leaves, scorched or burned look to leaves."
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Sulfur"
+                android:textSize="18sp"
+                android:textColor="@color/green_b"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sulfur is a structural component of amino acids, proteins, vitamins and enzymes and is essential to produce chlorophyll.It imparts flavor to many vegetables. Deficiencies show as light green leaves. Sulfur is readily lost by leaching from soil and should be applied with a nutrient formula. Some water supplies may contain sulfur."
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Copper"
+                android:textSize="18sp"
+                android:textColor="@color/green_b"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copper is concentrated in roots of plants and plays a part in nitrogen metabolism. It is a component of several enzymes and may be part of the enzyme systems that use carbohydrates and proteins. Copper is bound tightly in organic matter and may be deficient in highly organic soils. It is not readily lost from soil but may often be unavailable. Too much copper can cause toxicity."
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. Molybdenum"
+                android:textSize="18sp"
+                android:textColor="@color/green_b"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Molybdenum is a structural component of the enzyme that reduces nitrates to ammonia. Without it, the synthesis of proteins is blocked and plant growth ceases. Seeds may not form completely, and nitrogen deficiency may occur in plants are lacking molybdenum."
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. Chlorine"
+                android:textSize="18sp"
+                android:textColor="@color/green_b"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chlorine is involved in osmosis (movement of water ot solutes in cell), the ionic balance necessary for plants to take up mineral elements and in photosynthesis."
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8. Sodium"
+                android:textSize="18sp"
+                android:textColor="@color/green_b"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sodium is involved in osmosic (water movement) and ionic balance in plants."
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>

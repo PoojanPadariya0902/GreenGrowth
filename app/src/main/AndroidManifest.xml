@@ -13,6 +13,54 @@
         android:theme="@style/Theme.GreenGrowth"
         tools:targetApi="31">
         <activity
+            android:name=".cropitem"
+            android:exported="false" />
+        <activity
+            android:name=".summer_crop"
+            android:exported="false" />
+        <activity
+            android:name=".splash_screen"
+            android:exported="false" />
+        <activity
+            android:name=".soil_report_card"
+            android:exported="false" />
+        <activity
+            android:name=".s_utilization_fertil"
+            android:exported="false" />
+        <activity
+            android:name=".s_t_lab"
+            android:exported="false" />
+        <activity
+            android:name=".s_s_collection"
+            android:exported="false" />
+        <activity
+            android:name=".s_importance_micro"
+            android:exported="false" />
+        <activity
+            android:name=".rabi_crop"
+            android:exported="false" />
+        <activity
+            android:name=".precautions"
+            android:exported="false" />
+        <activity
+            android:name=".otp_verification"
+            android:exported="false" />
+        <activity
+            android:name=".new_user"
+            android:exported="false" />
+        <activity
+            android:name=".new_soil_card"
+            android:exported="false" />
+        <activity
+            android:name=".kharif_crop"
+            android:exported="false" />
+        <activity
+            android:name=".have_soil_card"
+            android:exported="false" />
+        <activity
+            android:name=".choose_user"
+            android:exported="false" />
+        <activity
             android:name=".AnotherActivity"
             android:exported="false" />
         <activity
